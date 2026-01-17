@@ -39,8 +39,7 @@ body {
 
 header,
 main,
-footer,
-section {
+footer{
   padding: 1rem;
 }
 
@@ -95,3 +94,56 @@ button {
   - emphasis
   - visual grouping
 */
+/* Layout container */
+.layout {
+  display: flex;
+  min-height: 50vh;
+}
+
+/* Left sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #f2f2f2;
+  padding: 16px;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+  font-size: 0.90rem;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 6px;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+}
+
+/* Main content area */
+.content {
+  flex: 1;
+  padding: 16px;
+}
+.button {
+  width: 145px;
+  height: 55px;
+  background-color: #4CAF50;   /* background */
+  color: white;                /* text color */
+  padding: 10px 16px;          /* space inside */
+  border: none;                /* remove default border */
+  border-radius: 6px;          /* rounded corners */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;             /* hand cursor */
+}
+h2 {
+  margin-top: 0;
+}
+
